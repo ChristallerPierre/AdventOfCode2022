@@ -1,8 +1,7 @@
 ﻿using Day3;
 using Lib;
 
-string RealFile = "Real.txt";
-var input = await FileUtilities.GetSampleAsync(RealFile);
+var input = await FileUtilities.GetSampleAsync(FileUtilities.RealFileName);
 
 // A
 var result = Puzzle.Part1(input);

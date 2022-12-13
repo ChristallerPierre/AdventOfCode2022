@@ -5,12 +5,9 @@ namespace Day3.Test
 {
     public class PuzzleTest
     {
-        private const string SampleFileName = "Sample.txt";
-        private const string RealFile = "Real.txt";
-
         [Theory]
-        [InlineData(SampleFileName, 157)]
-        [InlineData(RealFile, 7742)]
+        [InlineData(FileUtilities.SampleFileName, 157)]
+        [InlineData(FileUtilities.RealFileName, 7742)]
         public async Task Part1(string filename, int expected)
         {
             // A
@@ -74,8 +71,8 @@ namespace Day3.Test
         }
 
         [Theory]
-        [InlineData(SampleFileName, 70)]
-        [InlineData(RealFile, 2276)]
+        [InlineData(FileUtilities.SampleFileName, 70)]
+        [InlineData(FileUtilities.RealFileName, 2276)]
         public async Task Part2(string filename, int expected)
         {
             // A
