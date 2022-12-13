@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Day4;
+using Lib;
+
+var input = await FileUtilities.GetSampleAsync(FileUtilities.RealFileName);
+
+// A
+var result = Puzzle.Part1(input);
+Console.WriteLine(result);
